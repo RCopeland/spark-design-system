@@ -1,7 +1,7 @@
 {
   "name": "@sparkdesignsystem/spark-extras-angular-award",
   "description": "The Award component showcases awards in a vertically stacked layout that switches to side by side on larger screens.",
-  "version": "3.0.8-alpha.4",
+  "version": "3.0.8-alpha.5",
   "files": [
     "../../dist/spark-extras-angular-award"
   ],
