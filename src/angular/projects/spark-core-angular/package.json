@@ -1,16 +1,7 @@
 {
   "name": "@sparkdesignsystem/spark-core-angular",
   "description": "A collection of Spark Design System components in Angular 6+",
-  "version": "6.0.4-alpha.5",
-  "files": [
-    "src/angular/dist/spark-core-angular"
-  ],
-  "scripts": {
-    "lint": "ng lint spark-core-angular",
-    "test": "ng test spark-core-angular --watch=false",
-    "build": "ng build spark-core-angular",
-    "prepublish": "npm run build"
-  },
+  "version": "6.0.4-alpha.7",
   "peerDependencies": {
     "@angular/animations": "^6.1.4",
     "@angular/common": "^6.1.4",
@@ -31,5 +22,18 @@
     "tiny-date-picker": "^3.2.6",
     "zone.js": "^0.8.26"
   },
-  "gitHead": "ade844a909c03c5c7411acb13e03331d729df5db"
+  "gitHead": "ade844a909c03c5c7411acb13e03331d729df5db",
+  "main": "bundles/sparkdesignsystem-spark-core-angular.umd.js",
+  "module": "fesm5/sparkdesignsystem-spark-core-angular.js",
+  "es2015": "fesm2015/sparkdesignsystem-spark-core-angular.js",
+  "esm5": "esm5/sparkdesignsystem-spark-core-angular.js",
+  "esm2015": "esm2015/sparkdesignsystem-spark-core-angular.js",
+  "fesm5": "fesm5/sparkdesignsystem-spark-core-angular.js",
+  "fesm2015": "fesm2015/sparkdesignsystem-spark-core-angular.js",
+  "typings": "sparkdesignsystem-spark-core-angular.d.ts",
+  "metadata": "sparkdesignsystem-spark-core-angular.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
 }

@@ -1,0 +1,7 @@
+bundles/
+esm5/
+esm2015/
+fesm5/
+fesm2015/
+lib/**/*.d.ts
+*.d.ts
