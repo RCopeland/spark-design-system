@@ -1,7 +1,7 @@
 {
   "name": "@sparkdesignsystem/spark-core-angular",
   "description": "A collection of Spark Design System components in Angular 6+",
-  "version": "6.0.3",
+  "version": "6.0.4-alpha.0",
   "files": [
     "../../dist/spark-core-angular"
   ],
@@ -29,6 +29,5 @@
     "core-js": "^2.5.7",
     "tiny-date-picker": "^3.2.6",
     "zone.js": "^0.8.26"
-  },
-  "dependencies": {}
+  }
 }
