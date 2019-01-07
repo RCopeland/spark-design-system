@@ -29,5 +29,6 @@
     "core-js": "^2.5.7",
     "tiny-date-picker": "^3.2.6",
     "zone.js": "^0.8.26"
-  }
+  },
+  "gitHead": "ade844a909c03c5c7411acb13e03331d729df5db"
 }

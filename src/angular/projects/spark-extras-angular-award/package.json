@@ -21,5 +21,6 @@
     "@angular/platform-browser-dynamic": "^6.1.4",
     "@angular/router": "^6.1.4",
     "@sparkdesignsystem/spark-core-angular": "^6.0.3"
-  }
+  },
+  "gitHead": "ade844a909c03c5c7411acb13e03331d729df5db"
 }
