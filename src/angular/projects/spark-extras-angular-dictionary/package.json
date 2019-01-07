@@ -2,6 +2,9 @@
   "name": "@sparkdesignsystem/spark-extras-angular-dictionary",
   "description": "This component is intended for displays of key-value pairs.",
   "version": "3.0.6",
+  "files": [
+    "../../dist/spark-extras-angular-dictionary"
+  ],
   "scripts": {
     "lint": "ng lint spark-extras-angular-dictionary",
     "test": "ng test spark-extras-angular-dictionary --watch=false",

@@ -2,6 +2,9 @@
   "name": "@sparkdesignsystem/spark-extras-angular-highlight-board",
   "description": "The Highlight Board component is used as a lead into an experience as a means to encourage engagement within the experience.",
   "version": "3.0.6",
+  "files": [
+    "../../dist/spark-extras-angular-highlight-board"
+  ],
   "scripts": {
     "lint": "ng lint spark-extras-angular-highlight-board",
     "test": "ng test spark-extras-angular-highlight-board --watch=false",
