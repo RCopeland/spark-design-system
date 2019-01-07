@@ -3,7 +3,7 @@
   "description": "A collection of Spark Design System components in Angular 6+",
   "version": "6.0.4-alpha.3",
   "files": [
-    "../../dist/spark-core-angular"
+    "../../dist/spark-core-angular/*"
   ],
   "scripts": {
     "lint": "ng lint spark-core-angular",
