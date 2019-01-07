@@ -8,7 +8,7 @@ import { SprkLabelDirective } from '../../../directives/inputs/sprk-label/sprk-l
   selector: 'sprk-icon-input-container',
   template: `
     <div [ngClass]="getClasses()">
-      <div [ngClass]="getIconContainerClasses()">
+      <div [ngClass]="getIconContainerClasses()" style="">
         <ng-content select="[sprkLabel]"></ng-content>
         <ng-content select="[sprk-input-icon]"></ng-content>
         <ng-content select="[sprkInput]"></ng-content>

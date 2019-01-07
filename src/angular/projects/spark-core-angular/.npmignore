@@ -2,5 +2,4 @@ src/
 node_modules/
 etc/
 coverage/
-dist/
 *.js
