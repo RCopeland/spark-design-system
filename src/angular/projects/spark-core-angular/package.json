@@ -1,7 +1,7 @@
 {
   "name": "@sparkdesignsystem/spark-core-angular",
   "description": "A collection of Spark Design System components in Angular 6+",
-  "version": "6.0.4-alpha.0",
+  "version": "6.0.4-alpha.1",
   "files": [
     "../../dist/spark-core-angular"
   ],
