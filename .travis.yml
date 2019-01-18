@@ -6,4 +6,5 @@ before_install:
   - npm install --prefix packages/spark-core
   - npm install --prefix packages/spark-highlight-board
 install:
-  - npm test
+  - npm test --prefix packages/spark-core
+  - npm test --prefix packages/spark-highlight-board
