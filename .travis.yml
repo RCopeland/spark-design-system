@@ -2,9 +2,15 @@ language: node_js
 node_js:
   - "8.10.0"
 
-install:
-  - npm install --prefix packages/spark-core
-  - npm install --prefix packages/spark-highlight-board
-script:
-  - cd packages/spark-core && npm test && cd ..
-  - cd spark-highlight-board && npm test
+jobs:
+  include:
+    - stage: spark-core
+      install:
+        - npm install --prefix packages/spark-core
+      script:
+        - cd packages/spark-core && npm test
+    - stage: spark-highlight-board
+      install:
+        - npm install --prefix packages/spark-highlight-board
+      script:
+        - cd packages/spark-highlight-board && npm test
