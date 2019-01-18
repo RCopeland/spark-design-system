@@ -2,33 +2,15 @@ language: node_js
 node_js:
   - "8.10.0"
 
-matrix:
+jobs:
   include:
-    - stage: spark-core
+    - stage: installation
       install:
         - npm install --prefix packages/spark-core
-      script:
-        - cd packages/spark-core && npm test
-    - stage: spark-highlight-board
       install:
         - npm install --prefix packages/spark-highlight-board
+    - stage: unit tests
+      script:
+        - cd packages/spark-core && npm test
       script:
         - cd packages/spark-highlight-board && npm test
-    - stage: spark-angular
-      sudo: required
-      addons:
-        apt:
-          sources:
-            - google-chrome
-          packages:
-            - google-chrome-stable
-      before_install:
-        - export CHROME_BIN=/usr/bin/google-chrome
-        - "export DISPLAY=:99.0"
-        - "sh -e /etc/init.d/xvfb start"
-        - sleep 3 # give xvfb some time to start
-      install:
-        - npm install -g @angular/cli @angular-devkit/build-angular gulp
-      script:
-        - $(npm bin)/gulp pre-publish
-        - $(npm bin)/gulp test-angular
