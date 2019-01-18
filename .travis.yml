@@ -3,7 +3,7 @@ node_js:
   - "8.10.0"
 
 before_install:
-  - cd packages/spark-core && npm install
-  - cd ../packages/spark-highlight-board && npm install
+  - npm install --prefix packages/spark-core
+  - npm install --prefix packages/spark-highlight-board
 install:
   - npm test
