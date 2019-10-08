@@ -4,7 +4,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import * as _ from 'lodash';
+import uniqueId from 'lodash.uniqueid';
 import SprkSpinner from '../../spinners/react/SprkSpinner';
 import CloseButton from './CloseButton';
 import ModalFooter from './ModalFooter';
@@ -14,7 +14,7 @@ class SprkModal extends Component {
   constructor(props) {
     super(props);
 
-    this.aria_id = _.uniqueId();
+    this.aria_id = uniqueId();
     this.closeButtonRef = React.createRef();
     this.footerRef = React.createRef();
     this.containerRef = React.createRef();

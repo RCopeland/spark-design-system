@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AnimateHeight from 'react-animate-height';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { uniqueId } from 'lodash';
+import uniqueId from 'lodash.uniqueid';
 import SprkIcon from '../../../../icons/react/SprkIcon';
 import SprkLink from '../../../../../base/links/react/SprkLink';
 
@@ -158,11 +158,11 @@ SprkMastheadAccordionItem.propTypes = {
       element: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
       // Assigned to the href attribute if element is 'a'
       href: PropTypes.string,
-      /** The element to render, could be 'a' or a Component like Link */ 
+      /** The element to render, could be 'a' or a Component like Link */
       text: PropTypes.string,
     }),
   ),
-  /** The text inside the element */ 
+  /** The text inside the element */
   text: PropTypes.string,
 };
 

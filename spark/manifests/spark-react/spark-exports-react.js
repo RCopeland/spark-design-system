@@ -2,7 +2,7 @@ export { default as SprkAlert } from '../../components/alerts/react/SprkAlert';
 export { default as SprkButton }
   from '../../components/buttons/react/SprkButton';
 export { default as SprkDatePickerInput }
-  from '../../base/inputs/react/SprkDatePickerInput';
+  from '../../base/inputs/react/SprkDatePickerInput/SprkDatePickerInput';
 export { default as SprkDictionary }
   from '../../components/dictionary/react/SprkDictionary';
 export { default as SprkDivider }
@@ -14,11 +14,11 @@ export { default as SprkHighlightBoard }
 export { default as SprkIcon }
   from '../../components/icons/react/SprkIcon';
 export { default as SprkTextInput }
-  from '../../base/inputs/react/SprkTextInput';
+  from '../../base/inputs/react/SprkTextInput/SprkTextInput';
 export { default as SprkRevealInput }
-  from '../../base/inputs/react/SprkRevealInput';
+  from '../../base/inputs/react/SprkRevealInput/SprkRevealInput';
 export { default as SprkSelectionInput }
-  from '../../base/inputs/react/SprkSelectionInput';
+  from '../../base/inputs/react/SprkSelectionInput/SprkSelectionInput';
 export { default as SprkLink }
   from '../../base/links/react/SprkLink';
 export { default as SprkTable }
@@ -38,7 +38,7 @@ export { default as SprkListItem }
 export { default as SprkTabs }
   from '../../components/tabs/react/SprkTabs';
 export { default as SprkTabsPanel }
-  from '../../components/tabs/react/components/SprkTabsPanel/SprkTabsPanel';
+  from '../../components/tabs/react/components/SprkTabsPanel';
 export { default as SprkFooter }
   from '../../components/footer/react/SprkFooter';
 export { default as SprkToggle }
@@ -46,11 +46,11 @@ export { default as SprkToggle }
 export { default as SprkAccordion }
   from '../../components/accordions/react/SprkAccordion';
 export { default as SprkAccordionItem }
-  from '../../components/accordions/react/SprkAccordionItem';
+  from '../../components/accordions/react/components/SprkAccordionItem/SprkAccordionItem';
 export { default as SprkStack }
   from '../../objects/stack/react/SprkStack';
 export { default as SprkStackItem }
-  from '../../objects/stack/react/components/SprkStackItem/SprkStackItem';
+  from '../../objects/stack/react/SprkStackItem';
 export { default as SprkAward }
   from '../../components/awards/react/SprkAward';
 export { default as SprkCard }

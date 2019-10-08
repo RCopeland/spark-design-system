@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { uniqueId } from 'lodash';
+import uniqueId from 'lodash.uniqueid';
 import PropTypes from 'prop-types';
 import SprkToggle from '../../../../toggle/react/SprkToggle';
 
