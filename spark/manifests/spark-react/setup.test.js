@@ -1,3 +1,5 @@
+import { SprkButton } from './dist/index.js';
+console.log(SprkButton);
 /* eslint-disable no-unused-vars */
 import Enzyme, { shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
