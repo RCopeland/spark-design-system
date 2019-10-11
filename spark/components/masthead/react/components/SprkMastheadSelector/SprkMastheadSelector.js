@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import uniqueId from 'lodash.uniqueid';
+import uniqueId from 'lodash/uniqueid';
 import SprkIcon from '../../../../icons/react/SprkIcon';
 import SprkLink from '../../../../../base/links/react/SprkLink';
 

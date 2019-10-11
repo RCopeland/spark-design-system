@@ -4,7 +4,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import uniqueId from 'lodash.uniqueid';
+import uniqueId from 'lodash/uniqueid';
 import SprkSpinner from '../../spinners/react/SprkSpinner';
 import CloseButton from './CloseButton';
 import ModalFooter from './ModalFooter';
