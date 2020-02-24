@@ -69,11 +69,9 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/spark-angular/src/test.ts",
-            "tsConfig": "projects/spark-angular/tsconfig.spec.json",
-            "karmaConfig": "projects/spark-angular/karma.conf.js"
+            "no-cache": true
           }
         },
         "lint": {
