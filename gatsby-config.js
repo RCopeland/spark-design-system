@@ -1,3 +1,5 @@
+const sass = require('sass');
+
 module.exports = {
   pathPrefix: '/spark-design-system',
   siteMetadata: {
@@ -72,7 +74,12 @@ module.exports = {
       },
     },
 
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        implementation: sass,
+      },
+    },
     {
       resolve: 'gatsby-symbol-set-fetch',
       options: {
