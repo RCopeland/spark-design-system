@@ -4,7 +4,7 @@
 
 > **Demo Version**
 
-Welcome to the Spark Design System, a product of [Quicken Loans](https://github.com/quickenloans).
+This is a demo version of the original project. I'll make dependency updates where necessary and remove assets owned or used by its previous owner. Otherwise, it will stay close to its original form.
 
 Spark Design System is where we collect our best solutions for how to design and build unified digital experiences for the Rocket brands.
 
