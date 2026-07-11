@@ -1,4 +1,5 @@
 import React from 'react';
+import { withPrefix } from 'gatsby';
 import {
   SprkStack,
   SprkStackItem,
@@ -22,10 +23,10 @@ const teaserDesigners = {
     text: 'Go To Designer Basics',
     ctaVariant: 'button',
     buttonVariant: 'tertiary',
-    href: '/principles/design-principles',
+    href: withPrefix('/principles/design-principles'),
   },
   media: {
-    href: '/principles/design-principles',
+    href: withPrefix('/principles/design-principles'),
     mediaLinkElement: 'a',
     imgAlt: 'An illustration of someone hands drawing on a tablet.',
     imgSrc: designersMedia,
@@ -47,10 +48,10 @@ const teaserDevelopers = {
     text: 'Go To Developer Basics',
     ctaVariant: 'button',
     buttonVariant: 'tertiary',
-    href: '/installing-spark',
+    href: withPrefix('/installing-spark'),
   },
   media: {
-    href: '/installing-spark',
+    href: withPrefix('/installing-spark'),
     mediaLinkElement: 'a',
     imgAlt: 'An illustration of a computer with code displayed.',
     imgSrc: developersMedia,
@@ -73,10 +74,10 @@ const teaserComponents = {
     text: 'Go To Components',
     ctaVariant: 'button',
     buttonVariant: 'tertiary',
-    href: '/using-spark/components/button',
+    href: withPrefix('/using-spark/components/button'),
   },
   media: {
-    href: '/using-spark/components/button',
+    href: withPrefix('/using-spark/components/button'),
     mediaLinkElement: 'a',
     imgAlt: 'An illustration of a graph paper and a magnifying glass.',
     imgSrc: componentsMedia,
@@ -97,10 +98,10 @@ const teaserFoundations = {
     text: 'Go To Foundations',
     ctaVariant: 'button',
     buttonVariant: 'tertiary',
-    href: '/using-spark/foundations/color',
+    href: withPrefix('/using-spark/foundations/color'),
   },
   media: {
-    href: '/using-spark/foundations/color',
+    href: withPrefix('/using-spark/foundations/color'),
     mediaLinkElement: 'a',
     imgAlt: 'Decorative illustrations of type and color.',
     imgSrc: foundationsMedia,
@@ -120,10 +121,10 @@ const teaserUtils = {
     text: 'Go To Utilities',
     ctaVariant: 'button',
     buttonVariant: 'tertiary',
-    href: '/using-spark/foundations/css-utilities',
+    href: withPrefix('/using-spark/foundations/css-utilities'),
   },
   media: {
-    href: '/using-spark/foundations/css-utilities',
+    href: withPrefix('/using-spark/foundations/css-utilities'),
     mediaLinkElement: 'a',
     imgAlt: 'Decorative illustrations of pages.',
     imgSrc: utilitiesMedia,
