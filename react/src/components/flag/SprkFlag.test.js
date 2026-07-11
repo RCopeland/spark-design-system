@@ -12,7 +12,7 @@ describe('SprkFlag:', () => {
         media={
           <img
             alt="Provide useful alternative text"
-            src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+            src="../../../storybook-assets/spark-logo-mark.svg"
           />
         }
       />,
@@ -27,7 +27,7 @@ describe('SprkFlag:', () => {
         media={
           <img
             alt="Provide useful alternative text"
-            src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+            src="../../../storybook-assets/spark-logo-mark.svg"
           />
         }
       />,
@@ -42,7 +42,7 @@ describe('SprkFlag:', () => {
         media={
           <img
             alt="Provide useful alternative text"
-            src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+            src="../../../storybook-assets/spark-logo-mark.svg"
           />
         }
       />,
@@ -58,7 +58,7 @@ describe('SprkFlag:', () => {
         media={
           <img
             alt="Provide useful alternative text"
-            src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+            src="../../../storybook-assets/spark-logo-mark.svg"
           />
         }
         additionalClasses={testClass}
@@ -75,7 +75,7 @@ describe('SprkFlag:', () => {
         media={
           <img
             alt="Provide useful alternative text"
-            src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+            src="../../../storybook-assets/spark-logo-mark.svg"
           />
         }
         additionalClasses={testClass}
@@ -93,7 +93,7 @@ describe('SprkFlag:', () => {
         media={
           <img
             alt="Provide useful alternative text"
-            src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+            src="../../../storybook-assets/spark-logo-mark.svg"
           />
         }
         additionalClasses={testClass}
@@ -111,7 +111,7 @@ describe('SprkFlag:', () => {
         media={
           <img
             alt="Provide useful alternative text"
-            src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+            src="../../../storybook-assets/spark-logo-mark.svg"
           />
         }
         additionalClasses={testClass}
@@ -127,7 +127,7 @@ describe('SprkFlag:', () => {
         media={
           <img
             alt="Provide useful alternative text"
-            src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+            src="../../../storybook-assets/spark-logo-mark.svg"
           />
         }
         additionalClasses={testClass}
@@ -143,7 +143,7 @@ describe('SprkFlag:', () => {
         media={
           <img
             alt="Provide useful alternative text"
-            src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+            src="../../../storybook-assets/spark-logo-mark.svg"
           />
         }
         idString={testId}

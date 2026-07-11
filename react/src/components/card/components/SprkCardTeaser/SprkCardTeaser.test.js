@@ -23,7 +23,7 @@ const createTestObjects = () => {
     mediaLinkElement: 'a',
     iconName: '',
     imgAlt: '',
-    imgSrc: 'https://spark-assets.netlify.app/desktop.jpg',
+    imgSrc: '../../../storybook-assets/desktop.jpg',
     mediaAnalyticsString: '',
     mediaVariant: 'img',
   };

@@ -5,9 +5,7 @@ import { markdownDocumentationLinkBuilder } from '../../../../storybook-utilitie
 export default {
   title: 'Components/Highlight Board',
   component: SprkHighlightBoard,
-  decorators: [
-    story => <div className="sprk-o-Box">{story()}</div>
-  ],
+  decorators: [(story) => <div className="sprk-o-Box">{story()}</div>],
   parameters: {
     jest: ['SprkHighlightBoard'],
     info: `
@@ -23,7 +21,7 @@ then they should be \`<button>\` elements with \`aria-role=button\`.
 
 export const defaultStory = () => (
   <SprkHighlightBoard
-    imgSrc="https://spark-assets.netlify.app/desktop.jpg"
+    imgSrc="../../../storybook-assets/desktop.jpg"
     imgAlt="desktop"
     heading="Hello, Welcome To Spark Design System"
     ctaText="Designers"
@@ -57,7 +55,7 @@ noImage.story = {
 export const stacked = () => (
   <SprkHighlightBoard
     variant="stacked"
-    imgSrc="https://spark-assets.netlify.app/desktop.jpg"
+    imgSrc="../../../storybook-assets/desktop.jpg"
     imgAlt="desktop"
     heading="Hello, Welcome To Spark Design System"
     ctaText="Designers"

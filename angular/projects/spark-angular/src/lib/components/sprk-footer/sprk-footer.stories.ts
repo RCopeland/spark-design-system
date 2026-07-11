@@ -9,10 +9,8 @@ export default {
   component: SprkFooterComponent,
   decorators: [
     storyWrapper(
-      storyContent => (
-        `<div class="sprk-o-Box">${ storyContent }<div>`
-      )
-    )
+      (storyContent) => `<div class="sprk-o-Box">${storyContent}<div>`,
+    ),
   ],
   parameters: {
     info: `
@@ -26,10 +24,7 @@ must be present.
 };
 
 const modules = {
-  imports: [
-    SprkFooterModule,
-    BrowserAnimationsModule,
-  ],
+  imports: [SprkFooterModule, BrowserAnimationsModule],
 };
 
 export const defaultStory = () => ({
@@ -124,7 +119,7 @@ export const defaultStory = () => ({
           text: 'Buy a home, refinance, or manage your mortgage online with America&#8217;s largest mortgage lender',
           href: '#nogo',
           imgSrc:
-            'https://spark-assets.netlify.app/rocket-by-ql-white.svg',
+            '../../../../../../../storybook-assets/rocket-by-ql-white.svg',
           analyticsString: 'link-1',
           imgAlt: 'Rocket Mortgage by Quicken Loans Logo'
         },
@@ -132,7 +127,7 @@ export const defaultStory = () => ({
           text: 'Get a personal loan to consolidate debt, renovate your home and more',
           href: '#nogo',
           imgSrc:
-            'https://spark-assets.netlify.app/rocket-loans-white.svg',
+            '../../../../../../../storybook-assets/rocket-loans-white.svg',
           imgAlt: 'Rocket Loans Logo',
           analyticsString: 'link-2'
         },
@@ -140,7 +135,7 @@ export const defaultStory = () => ({
           text: 'Get a real estate agent handpicked for you and search the latest home listings',
           href: '#nogo',
           imgSrc:
-            'https://spark-assets.netlify.app/rocket-homes-white.svg',
+            '../../../../../../../storybook-assets/rocket-homes-white.svg',
           imgAlt: 'Rocket Homes Logo',
           analyticsString: 'link-3'
         },
@@ -148,7 +143,7 @@ export const defaultStory = () => ({
           text: 'Access tools and articles that can help you reach your financial goals',
           href: '#nogo',
           imgSrc:
-            'https://spark-assets.netlify.app/rocket-hq-white.svg',
+            '../../../../../../../storybook-assets/rocket-hq-white.svg',
           analyticsString: 'link-4',
           imgAlt: 'Rocket HQ Logo'
         }
@@ -214,14 +209,14 @@ export const defaultStory = () => ({
         {
           href: '#nogo',
           imgSrc:
-            'https://spark-assets.netlify.app/spark-logo-mark.svg',
+            '../../../../../../../storybook-assets/spark-logo-mark.svg',
           imgAlt: 'placeholder',
           analyticsString: 'awards-link-1'
         },
         {
           href: '#nogo',
           imgSrc:
-            'https://spark-assets.netlify.app/spark-logo-mark.svg',
+            '../../../../../../../storybook-assets/spark-logo-mark.svg',
           imgAlt: 'placeholder',
           analyticsString: 'awards-link-2'
         }
@@ -262,5 +257,5 @@ defaultStory.story = {
   name: 'Default',
   parameters: {
     jest: ['sprk-footer.component'],
-  }
+  },
 };

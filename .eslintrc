@@ -10,10 +10,7 @@
     "no-redeclare": "off",
     "import/no-unresolved": "off",
     "import/no-extraneous-dependencies": "off",
-    "max-len": ["error", 80, {
-      "ignorePattern": "^import\\s.+\\sfrom\\s.+;$",
-      "ignoreUrls": true
-    }],
+    "max-len": "off",
     "object-curly-newline": "off",
     "react/require-default-props" : "off",
     "react/jsx-filename-extension": "off",

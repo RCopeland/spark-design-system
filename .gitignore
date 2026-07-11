@@ -46,3 +46,6 @@ speed-measure-plugin*.json
 sass-vars.json
 sass-modifiers.json
 sass-utilities.json
+# Build output for deployment
+gh-pages-build/
+preview/

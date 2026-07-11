@@ -8,10 +8,8 @@ export default {
   component: SprkFlagComponent,
   decorators: [
     storyWrapper(
-      storyContent => (
-        `<div class="sprk-o-Box">${ storyContent }<div>`
-      )
-    )
+      (storyContent) => `<div class="sprk-o-Box">${storyContent}<div>`,
+    ),
   ],
   parameters: {
     docs: { iframeHeight: 200 },
@@ -28,9 +26,7 @@ in one of the slots mentioned above, it will not render.
 };
 
 const modules = {
-  imports: [
-    SprkFlagModule,
-  ],
+  imports: [SprkFlagModule],
 };
 
 export const defaultStory = () => ({
@@ -40,14 +36,14 @@ export const defaultStory = () => ({
       <img
         media-slot
         alt="Provide useful alternative text"
-        src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+        src="../../../../../../../storybook-assets/spark-logo-mark.svg"
       />
       <p body-slot>
         Lorem ipsum dolor. Sit amet pede. Tempus donec et.
         Suspendisse id inventore integer eum non enim diam habitant.
       </p>
     </sprk-flag>
-  `
+  `,
 });
 
 defaultStory.story = {
@@ -66,14 +62,14 @@ export const reversed = () => ({
       <img
         media-slot
         alt="Provide useful alternative text"
-        src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+        src="../../../../../../../storybook-assets/spark-logo-mark.svg"
       />
       <p body-slot>
         Lorem ipsum dolor. Sit amet pede. Tempus donec et.
         Suspendisse id inventore integer eum non enim diam habitant.
       </p>
     </sprk-flag>
-  `
+  `,
 });
 
 reversed.story = {
@@ -91,14 +87,14 @@ export const stacked = () => ({
       <img
         media-slot
         alt="Provide useful alternative text"
-        src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+        src="../../../../../../../storybook-assets/spark-logo-mark.svg"
       />
       <p body-slot>
         Lorem ipsum dolor. Sit amet pede. Tempus donec et.
         Suspendisse id inventore integer eum non enim diam habitant.
       </p>
     </sprk-flag>
-  `
+  `,
 });
 
 stacked.story = {

@@ -1,27 +1,24 @@
 @font-face {
   font-family: RocketSans;
-  src:  url('https://spark-assets.netlify.app/RocketSans-Bold.woff2'),
-        url('https://spark-assets.netlify.app/RocketSans-Bold.woff');
-  font-weight: 700;
+  src: url('../../src/fonts/RocketSans-Bold.woff2'),
+    url('../../src/fonts/RocketSans-Bold.woff');
+  font-weight: bold;
 }
-
 @font-face {
   font-family: RocketSans;
-  src:  url('https://spark-assets.netlify.app/RocketSans-Medium.woff2'),
-        url('https://spark-assets.netlify.app/RocketSans-Medium.woff');
+  src: url('../../src/fonts/RocketSansMedium.woff2'),
+    url('../../src/fonts/RocketSansMedium.woff');
   font-weight: 500;
 }
-
 @font-face {
   font-family: RocketSans;
-  src:  url('https://spark-assets.netlify.app/RocketSans-Regular.woff2'),
-        url('https://spark-assets.netlify.app/RocketSans-Regular.woff');
-  font-weight: 400;
+  src: url('../../src/fonts/RocketSans.woff2'),
+    url('../../src/fonts/RocketSans.woff');
+  font-weight: normal;
 }
-
 @font-face {
   font-family: RocketSans;
-  src:  url('https://spark-assets.netlify.app/RocketSans-Light.woff2'),
-        url('https://spark-assets.netlify.app/RocketSans-Light.woff');
+  src: url('../../src/fonts/RocketSansLight.woff2'),
+    url('../../src/fonts/RocketSansLight.woff');
   font-weight: 300;
 }

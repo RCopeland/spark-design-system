@@ -13,9 +13,9 @@ Enzyme.configure({ adapter: new Adapter() });
 describe('SprkFooter:', () => {
   it('should display a Footer element with the correct base class', () => {
     const wrapper = mount(<SprkFooter />);
-    expect(wrapper.find('.sprk-o-Box.sprk-o-Box--large.sprk-c-Footer').length).toBe(
-      1,
-    );
+    expect(
+      wrapper.find('.sprk-o-Box.sprk-o-Box--large.sprk-c-Footer').length,
+    ).toBe(1);
   });
 
   it('should display a Footer element with the global section', () => {
@@ -24,7 +24,7 @@ describe('SprkFooter:', () => {
       items: [
         {
           mediaType: 'image',
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
           description: 'Lorem ipsum dolor sit amet, consectetur.',
         },
@@ -87,19 +87,18 @@ describe('SprkFooter:', () => {
       images: [
         {
           href: '#nogo',
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
         },
         {
           href: '#nogo',
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
         },
       ],
       disclaimerTitle: 'My Award Disclaimer',
       disclaimerAnalytics: 'test',
-      disclaimerText:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in laoreet ante, non feugiat neque. Suspendisse et ipsum leo. Quisque non consectetur justo.',
+      disclaimerText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in laoreet ante, non feugiat neque. Suspendisse et ipsum leo. Quisque non consectetur justo.`,
     };
     const wrapper = mount(<SprkFooter awards={awards} />);
     expect(wrapper.find(SprkFooterAwards).length).toBe(1);

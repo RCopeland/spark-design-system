@@ -8,24 +8,23 @@ const linkColumns = [
     links: [
       {
         href:
-          'https://github.com/sparkdesignsystem/spark-design-system/blob/staging/CONTRIBUTING.md',
+          'https://github.com/RCopeland/spark-design-system/blob/staging/CONTRIBUTING.md',
         text: 'Contributing',
         element: 'a',
       },
       {
-        href:
-          'https://github.com/sparkdesignsystem/spark-design-system/releases',
+        href: 'https://github.com/RCopeland/spark-design-system/releases',
         text: 'Release Notes',
         element: 'a',
       },
       {
-        href: 'https://github.com/sparkdesignsystem/spark-design-system',
+        href: 'https://github.com/RCopeland/spark-design-system',
         text: 'Github',
         element: 'a',
       },
       {
         href:
-          'https://github.com/sparkdesignsystem/spark-design-system/issues/new/choose',
+          'https://github.com/RCopeland/spark-design-system/issues/new/choose',
         text: 'File An Issue',
         element: 'a',
       },

@@ -129,6 +129,8 @@ const Header = ({ setContext }) => {
           }}
         />
       }
+      logoLink="/"
+      logoLinkElement={Link}
       additionalClasses="docs-masthead"
       utilityContents={utilityItems}
       navLink={

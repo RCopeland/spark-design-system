@@ -14,20 +14,25 @@ describe('SprkFooterGlobalSection:', () => {
       items: [
         {
           mediaType: 'image',
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
           description: 'Lorem ipsum dolor sit amet, consectetur.',
         },
         {
           mediaType: 'SprkIcon',
-          iconName: 'https://spark-assets.netlify.app/spark-logo.svg',
+          iconName: '../../../storybook-assets/spark-logo.svg',
           description: 'Lorem ipsum dolor sit amet, consectetur.',
         },
       ],
     };
 
-    const wrapper = mount(<SprkFooterGlobalSection globalItems={globalItems} />);
-    expect(wrapper.find('div.sprk-o-Stack__item.sprk-o-Stack.sprk-o-Stack--medium').length).toBe(2);
+    const wrapper = mount(
+      <SprkFooterGlobalSection globalItems={globalItems} />,
+    );
+    expect(
+      wrapper.find('div.sprk-o-Stack__item.sprk-o-Stack.sprk-o-Stack--medium')
+        .length,
+    ).toBe(2);
   });
 
   it('should render a SprkIcon if mediaType is SprkIcon', () => {
@@ -36,19 +41,21 @@ describe('SprkFooterGlobalSection:', () => {
       items: [
         {
           mediaType: 'image',
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
           description: 'Lorem ipsum dolor sit amet, consectetur.',
         },
         {
           mediaType: 'SprkIcon',
-          iconName: 'https://spark-assets.netlify.app/spark-logo.svg',
+          iconName: '../../../storybook-assets/spark-logo.svg',
           description: 'Lorem ipsum dolor sit amet, consectetur.',
         },
       ],
     };
 
-    const wrapper = mount(<SprkFooterGlobalSection globalItems={globalItems} />);
+    const wrapper = mount(
+      <SprkFooterGlobalSection globalItems={globalItems} />,
+    );
     expect(wrapper.find(SprkIcon).length).toBe(1);
   });
 
@@ -58,7 +65,7 @@ describe('SprkFooterGlobalSection:', () => {
       items: [
         {
           mediaType: 'image',
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
           description: 'Lorem ipsum dolor sit amet, consectetur.',
         },
@@ -67,7 +74,8 @@ describe('SprkFooterGlobalSection:', () => {
           description: 'Lorem ipsum dolor sit amet, consectetur.',
           svg: (
             <svg
-              width="398px" height="109.812px"
+              width="398px"
+              height="109.812px"
               viewBox="0 0 303 274"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -111,7 +119,9 @@ describe('SprkFooterGlobalSection:', () => {
       ],
     };
 
-    const wrapper = mount(<SprkFooterGlobalSection globalItems={globalItems} />);
+    const wrapper = mount(
+      <SprkFooterGlobalSection globalItems={globalItems} />,
+    );
     expect(wrapper.find('svg').length).toBe(1);
   });
 
@@ -121,7 +131,7 @@ describe('SprkFooterGlobalSection:', () => {
       items: [
         {
           mediaType: 'image',
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
           description: 'Lorem ipsum dolor sit amet, consectetur.',
           element: 'a',
@@ -129,13 +139,15 @@ describe('SprkFooterGlobalSection:', () => {
         },
         {
           mediaType: 'SprkIcon',
-          iconName: 'https://spark-assets.netlify.app/spark-logo.svg',
+          iconName: '../../../storybook-assets/spark-logo.svg',
           description: 'Lorem ipsum dolor sit amet, consectetur.',
         },
       ],
     };
 
-    const wrapper = mount(<SprkFooterGlobalSection globalItems={globalItems} />);
+    const wrapper = mount(
+      <SprkFooterGlobalSection globalItems={globalItems} />,
+    );
     expect(
       wrapper
         .find('[data-analytics="test-link"]')
@@ -150,7 +162,7 @@ describe('SprkFooterGlobalSection:', () => {
       items: [
         {
           mediaType: 'image',
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
           description: 'Lorem ipsum dolor sit amet, consectetur.',
           element: 'span',
@@ -158,13 +170,15 @@ describe('SprkFooterGlobalSection:', () => {
         },
         {
           mediaType: 'SprkIcon',
-          iconName: 'https://spark-assets.netlify.app/spark-logo.svg',
+          iconName: '../../../storybook-assets/spark-logo.svg',
           description: 'Lorem ipsum dolor sit amet, consectetur.',
         },
       ],
     };
 
-    const wrapper = mount(<SprkFooterGlobalSection globalItems={globalItems} />);
+    const wrapper = mount(
+      <SprkFooterGlobalSection globalItems={globalItems} />,
+    );
     expect(
       wrapper
         .find('[data-analytics="test-link"]')

@@ -13,20 +13,19 @@ describe('SprkFooterAwards:', () => {
       images: [
         {
           href: '#nogo',
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
           addClasses: 'drizzle-c-Logo',
         },
         {
           href: '#nogo',
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
           addClasses: 'drizzle-c-Logo',
         },
       ],
       disclaimerTitle: 'My Award Disclaimer',
-      disclaimerText:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in laoreet ante, non feugiat neque. Suspendisse et ipsum leo. Quisque non consectetur justo.',
+      disclaimerText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in laoreet ante, non feugiat neque. Suspendisse et ipsum leo. Quisque non consectetur justo.`,
     };
 
     const wrapper = mount(<SprkFooterAwards awards={awards} />);
@@ -39,22 +38,21 @@ describe('SprkFooterAwards:', () => {
       images: [
         {
           href: '#nogo',
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
           addClasses: 'drizzle-c-Logo',
           element: 'a',
         },
         {
           href: '#nogo',
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
           addClasses: 'drizzle-c-Logo',
           element: 'a',
         },
       ],
       disclaimerTitle: 'My Award Disclaimer',
-      disclaimerText:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in laoreet ante, non feugiat neque. Suspendisse et ipsum leo. Quisque non consectetur justo.',
+      disclaimerText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in laoreet ante, non feugiat neque. Suspendisse et ipsum leo. Quisque non consectetur justo.`,
     };
 
     const wrapper = mount(<SprkFooterAwards awards={awards} />);
@@ -67,21 +65,20 @@ describe('SprkFooterAwards:', () => {
       heading: 'Awards Heading Title',
       images: [
         {
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
           analyticsString: 'test-link',
           element: 'a',
         },
         {
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
           addClasses: 'drizzle-c-Logo',
           element: 'a',
         },
       ],
       disclaimerTitle: 'My Award Disclaimer',
-      disclaimerText:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in laoreet ante, non feugiat neque. Suspendisse et ipsum leo. Quisque non consectetur justo.',
+      disclaimerText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in laoreet ante, non feugiat neque. Suspendisse et ipsum leo. Quisque non consectetur justo.`,
     };
 
     const wrapper = mount(<SprkFooterAwards awards={awards} />);
@@ -98,21 +95,20 @@ describe('SprkFooterAwards:', () => {
       heading: 'Awards Heading Title',
       images: [
         {
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
           analyticsString: 'test-link',
           element: 'span',
         },
         {
-          src: 'https://spark-assets.netlify.app/spark-logo.svg',
+          src: '../../../storybook-assets/spark-logo.svg',
           altText: 'Spark Logo',
           addClasses: 'drizzle-c-Logo',
           element: 'a',
         },
       ],
       disclaimerTitle: 'My Award Disclaimer',
-      disclaimerText:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in laoreet ante, non feugiat neque. Suspendisse et ipsum leo. Quisque non consectetur justo.',
+      disclaimerText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in laoreet ante, non feugiat neque. Suspendisse et ipsum leo. Quisque non consectetur justo.`,
     };
 
     const wrapper = mount(<SprkFooterAwards awards={awards} />);

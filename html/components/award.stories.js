@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+/* eslint-disable max-len */
 import { useEffect } from '@storybook/client-api';
 import { toggle } from './toggle';
 import '../utilities/polyfills/classListSVG';
@@ -5,9 +7,7 @@ import { markdownDocumentationLinkBuilder } from '../../storybook-utilities/mark
 
 export default {
   title: 'Components/Award',
-  decorators: [
-    story => `<div class="sprk-o-Box">${story()}</div>`,
-  ],
+  decorators: [(story) => `<div class="sprk-o-Box">${story()}</div>`],
   parameters: {
     docs: { iframeHeight: 400 },
     info: `
@@ -39,14 +39,14 @@ export const defaultStory = () => {
         <img
           class="sprk-o-Stack__item sprk-o-Stack__item--center-column"
           alt="Spark placeholder image"
-          src="https://spark-assets.netlify.app/spark-logo-updated.svg" />
+          src="../storybook-assets/spark-logo-updated.svg" />
       </a>
 
       <a class="sprk-o-Stack__item sprk-o-Stack__item--flex@s sprk-o-Stack" href="#nogo">
         <img
           class="sprk-o-Stack__item sprk-o-Stack__item--center-column"
           alt="Spark placeholder image"
-          src="https://spark-assets.netlify.app/spark-logo-updated.svg" />
+          src="../storybook-assets/spark-logo-updated.svg" />
       </a>
     </div>
 

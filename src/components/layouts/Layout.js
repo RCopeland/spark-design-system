@@ -78,17 +78,8 @@ const Layout = ({ children, initialContext, hasSideBar, location }) => {
           </div>
           <div className="sprk-u-BackgroundColor--black sprk-u-AbsoluteCenter sprk-u-pam">
             <p className="sprk-u-Color--white">
-              Designs launching
-              <span className="sprk-u-FontWeight--bold sprk-u-mas">before</span>
-              July 14, 2021, please reference
-              <a
-                href="https://v13--spark-design-system.netlify.app/"
-                className="docs-c-Banner--link sprk-u-mls"
-              >
-                version 13 of Spark
-              </a>
-              . Questions? Please contact your Product Owner or Experience
-              Director.
+              Site for demo purposes only - Not affiliated with Rocket Mortgage
+              (Quicken Loans)
             </p>
           </div>
           <Header

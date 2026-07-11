@@ -98,10 +98,10 @@ const teaserFoundations = {
     text: 'Go To Foundations',
     ctaVariant: 'button',
     buttonVariant: 'tertiary',
-    href: withPrefix('/using-spark/foundations/color'),
+    href: withPrefix('/using-spark/foundations/color-usage'),
   },
   media: {
-    href: withPrefix('/using-spark/foundations/color'),
+    href: withPrefix('/using-spark/foundations/color-usage'),
     mediaLinkElement: 'a',
     imgAlt: 'Decorative illustrations of type and color.',
     imgSrc: foundationsMedia,
@@ -143,10 +143,10 @@ const teaserNews = {
     text: 'Go To News',
     ctaVariant: 'button',
     buttonVariant: 'tertiary',
-    href: 'https://github.com/sparkdesignsystem/spark-design-system/releases',
+    href: 'https://github.com/RCopeland/spark-design-system/releases',
   },
   media: {
-    href: 'https://github.com/sparkdesignsystem/spark-design-system/releases',
+    href: 'https://github.com/RCopeland/spark-design-system/releases',
     mediaLinkElement: 'a',
     imgAlt: 'Decorative illustrations of mail and notifications.',
     imgSrc: newsMedia,
@@ -228,7 +228,7 @@ const IndexPage = () => (
 
           <SprkStackItem>
             <SprkButton
-              href="https://github.com/sparkdesignsystem/spark-design-system/blob/master/CONTRIBUTING.md"
+              href="https://github.com/RCopeland/spark-design-system/blob/master/CONTRIBUTING.md"
               variant="secondary"
             >
               Learn More

@@ -2,9 +2,7 @@ import { markdownDocumentationLinkBuilder } from '../../storybook-utilities/mark
 
 export default {
   title: 'Components/Highlight Board',
-  decorators: [
-    story => `<div class="sprk-o-Box">${story()}</div>`,
-  ],
+  decorators: [(story) => `<div class="sprk-o-Box">${story()}</div>`],
   parameters: {
     docs: { iframeHeight: 600 },
     info: `
@@ -29,7 +27,7 @@ export const defaultStory = () => `
     >
       <img
         class="sprk-c-HighlightBoard__image"
-        src="https://spark-assets.netlify.app/desktop.jpg"
+        src="../storybook-assets/desktop.jpg"
         alt="desktop"
       >
 
@@ -73,7 +71,7 @@ defaultStory.story = {
   name: 'Default',
   parameters: {
     jest: ['highlight-board'],
-  }
+  },
 };
 
 export const noImage = () => `
@@ -138,7 +136,7 @@ export const stacked = () => `
   >
     <img
       class="sprk-c-HighlightBoard__image"
-      src="https://spark-assets.netlify.app/desktop.jpg" alt="desktop">
+      src="../storybook-assets/desktop.jpg" alt="desktop">
 
     <div class="
       sprk-c-HighlightBoard__content

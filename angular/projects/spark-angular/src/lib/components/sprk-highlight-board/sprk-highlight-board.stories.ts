@@ -8,10 +8,8 @@ export default {
   component: SprkHighlightBoardComponent,
   decorators: [
     storyWrapper(
-      storyContent => (
-        `<div class="sprk-o-Box">${ storyContent }<div>`
-      )
-    )
+      (storyContent) => `<div class="sprk-o-Box">${storyContent}<div>`,
+    ),
   ],
   parameters: {
     info: `
@@ -27,9 +25,7 @@ then they should be \`<button>\` elements with \`aria-role=button\`.
 };
 
 const modules = {
-  imports: [
-    SprkHighlightBoardModule,
-  ],
+  imports: [SprkHighlightBoardModule],
 };
 
 export const defaultStory = () => ({
@@ -41,7 +37,7 @@ export const defaultStory = () => ({
       ctaHref="#nogo"
       ctaText2="Developers"
       ctaHref2="#nogo"
-      imgSrc="https://spark-assets.netlify.app/desktop.jpg"
+      imgSrc="../../../../../../../storybook-assets/desktop.jpg"
       imgAlt="placeholder"
       idString="highlightboard-1"
     >
@@ -53,7 +49,7 @@ defaultStory.story = {
   name: 'Default',
   parameters: {
     jest: ['sprk-highlight-board.component'],
-  }
+  },
 };
 
 export const noImage = () => ({
@@ -74,7 +70,7 @@ noImage.story = {
   parameters: {
     docs: { iframeHeight: 300 },
     jest: ['sprk-highlight-board.component'],
-  }
+  },
 };
 
 export const stacked = () => ({
@@ -84,7 +80,7 @@ export const stacked = () => ({
       heading="Hello, Welcome To Spark Design System"
       ctaText="Learn More"
       type="stacked"
-      imgSrc="https://spark-assets.netlify.app/desktop.jpg"
+      imgSrc="../../../../../../../storybook-assets/desktop.jpg"
       imgAlt="placeholder"
       idString="highlightboard-4"
     >
@@ -96,6 +92,5 @@ stacked.story = {
   parameters: {
     docs: { iframeHeight: 800 },
     jest: ['sprk-highlight-board.component'],
-  }
+  },
 };
-

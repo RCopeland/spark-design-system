@@ -12,13 +12,13 @@ describe('SprkAward:', () => {
     const images = [
       {
         href: '#nogo',
-        src: 'https://spark-assets.netlify.app/spark-placeholder.jpg',
+        src: '../../../storybook-assets/spark-placeholder.jpg',
         alt: 'Spark Placeholder Logo',
         analyticsString: 'award-1',
       },
       {
         href: '#nogo',
-        src: 'https://spark-assets.netlify.app/spark-placeholder.jpg',
+        src: '../../../storybook-assets/spark-placeholder.jpg',
         alt: 'Spark Placeholder Logo',
         analyticsString: 'award-2',
       },
@@ -34,13 +34,13 @@ describe('SprkAward:', () => {
     const images = [
       {
         href: '#nogo',
-        src: 'https://spark-assets.netlify.app/spark-placeholder.jpg',
+        src: '../../../storybook-assets/spark-placeholder.jpg',
         alt: 'Spark Placeholder Logo',
         analyticsString: 'award-1',
         element: 'a',
       },
       {
-        src: 'https://spark-assets.netlify.app/spark-placeholder.jpg',
+        src: '../../../storybook-assets/spark-placeholder.jpg',
         alt: 'Spark Placeholder Logo',
         analyticsString: 'award-2',
         element: 'span',
@@ -54,14 +54,14 @@ describe('SprkAward:', () => {
     const images = [
       {
         to: '#nogo',
-        src: 'https://spark-assets.netlify.app/spark-placeholder.jpg',
+        src: '../../../storybook-assets/spark-placeholder.jpg',
         alt: 'Spark Placeholder Logo',
         analyticsString: 'award-1',
         element: undefined,
       },
       {
         href: '#nogo',
-        src: 'https://spark-assets.netlify.app/spark-placeholder.jpg',
+        src: '../../../storybook-assets/spark-placeholder.jpg',
         alt: 'Spark Placeholder Logo',
         analyticsString: 'award-2',
       },
@@ -78,13 +78,13 @@ describe('SprkAward:', () => {
     const images = [
       {
         href: '#nogo',
-        src: 'https://spark-assets.netlify.app/spark-placeholder.jpg',
+        src: '../../../storybook-assets/spark-placeholder.jpg',
         alt: 'Spark Placeholder Logo',
         analyticsString: 'award-1',
       },
       {
         href: '#nogo',
-        src: 'https://spark-assets.netlify.app/spark-placeholder.jpg',
+        src: '../../../storybook-assets/spark-placeholder.jpg',
         alt: 'Spark Placeholder Logo',
         analyticsString: 'award-2',
       },
@@ -100,14 +100,14 @@ describe('SprkAward:', () => {
       const images = [
         {
           to: 'button',
-          src: 'https://spark-assets.netlify.app/spark-placeholder.jpg',
+          src: '../../../storybook-assets/spark-placeholder.jpg',
           alt: 'Spark Placeholder Logo',
           analyticsString: 'award-1',
           element: Link,
         },
         {
           to: 'button',
-          src: 'https://spark-assets.netlify.app/spark-placeholder.jpg',
+          src: '../../../storybook-assets/spark-placeholder.jpg',
           alt: 'Spark Placeholder Logo',
           analyticsString: 'award-2',
           element: Link,
@@ -143,7 +143,7 @@ describe('SprkAward:', () => {
     const images = [
       {
         href: '#nogo',
-        src: 'https://spark-assets.netlify.app/spark-placeholder.jpg',
+        src: '../../../storybook-assets/spark-placeholder.jpg',
         alt: 'Spark Placeholder Logo',
         analyticsString: 'award-1',
         addClasses: 'oldImageClass',
@@ -161,7 +161,7 @@ describe('SprkAward:', () => {
     const images = [
       {
         href: '#nogo',
-        src: 'https://spark-assets.netlify.app/spark-placeholder.jpg',
+        src: '../../../storybook-assets/spark-placeholder.jpg',
         alt: 'Spark Placeholder Logo',
         analyticsString: 'award-1',
         addClasses: 'oldImageClass',

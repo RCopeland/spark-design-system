@@ -1,5 +1,7 @@
+/* eslint-disable max-len */
+/* eslint-disable max-len */
 import { useEffect } from '@storybook/client-api';
-import { toggle } from '../components/toggle';
+import { toggle } from './toggle';
 import '../utilities/polyfills/classListSVG';
 import { markdownDocumentationLinkBuilder } from '../../storybook-utilities/markdownDocumentationLinkBuilder';
 
@@ -42,7 +44,7 @@ export const defaultStory = () => {
             <div class="sprk-o-Stack__item sprk-o-Stack sprk-o-Stack--medium">
               <div class="sprk-o-Stack__item">
                 <a class="sprk-b-Link sprk-b-Link--plain" href="#nogo">
-                  <img src="https://spark-assets.netlify.app/rocket-by-ql-white.svg" alt="Rocket Mortgage by Quicken Loans Logo">
+                  <img src="../storybook-assets/rocket-by-ql-white.svg" alt="Rocket Mortgage by Quicken Loans Logo">
                 </a>
               </div>
 
@@ -55,7 +57,7 @@ export const defaultStory = () => {
             <div class="sprk-o-Stack__item sprk-o-Stack sprk-o-Stack--medium">
               <div class="sprk-o-Stack__item">
                 <a class="sprk-b-Link sprk-b-Link--plain" href="#nogo">
-                  <img src="https://spark-assets.netlify.app/rocket-loans-white.svg" alt="Rocket Loans Logo">
+                  <img src="../storybook-assets/rocket-loans-white.svg" alt="Rocket Loans Logo">
                 </a>
               </div>
 
@@ -68,7 +70,7 @@ export const defaultStory = () => {
             <div class="sprk-o-Stack__item sprk-o-Stack sprk-o-Stack--medium">
               <div class="sprk-o-Stack__item">
                 <a class="sprk-b-Link sprk-b-Link--plain" href="#nogo">
-                  <img src="https://spark-assets.netlify.app/rocket-homes-white.svg" alt="Rocket Homes Logo">
+                  <img src="../storybook-assets/rocket-homes-white.svg" alt="Rocket Homes Logo">
                 </a>
               </div>
 
@@ -81,7 +83,7 @@ export const defaultStory = () => {
             <div class="sprk-o-Stack__item sprk-o-Stack sprk-o-Stack--medium">
               <div class="sprk-o-Stack__item">
                 <a class="sprk-b-Link sprk-b-Link--plain" href="#nogo">
-                  <img src="https://spark-assets.netlify.app/rocket-hq-white.svg" alt="Rocket HQ Logo">
+                  <img src="../storybook-assets/rocket-hq-white.svg" alt="Rocket HQ Logo">
                 </a>
               </div>
 
@@ -254,7 +256,7 @@ export const defaultStory = () => {
               <div class="sprk-o-Stack__item">
                 <a href="#nogo">
                   <img
-                    src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+                    src="../storybook-assets/spark-logo-mark.svg"
                     alt="spark logo">
                 </a>
               </div>
@@ -262,7 +264,7 @@ export const defaultStory = () => {
               <div class="sprk-o-Stack__item">
                 <a href="#nogo">
                   <img
-                    src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+                    src="../storybook-assets/spark-logo-mark.svg"
                     alt="spark logo">
                 </a>
               </div>

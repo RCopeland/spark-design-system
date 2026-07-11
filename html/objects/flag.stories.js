@@ -2,9 +2,7 @@ import { markdownDocumentationLinkBuilder } from '../../storybook-utilities/mark
 
 export default {
   title: 'Components/Flag',
-  decorators: [
-    story => `<div class="sprk-o-Box">${story()}</div>`,
-  ],
+  decorators: [(story) => `<div class="sprk-o-Box">${story()}</div>`],
   parameters: {
     info: `
 ${markdownDocumentationLinkBuilder('flag')}
@@ -13,13 +11,13 @@ ${markdownDocumentationLinkBuilder('flag')}
   },
 };
 
-export const defaultStory = () => (
+export const defaultStory = () =>
   `
     <div class="sprk-o-Flag">
       <div class="sprk-o-Flag__figure">
         <img
           alt="Provide useful alternative text"
-          src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+          src="../storybook-assets/spark-logo-mark.svg"
         />
       </div>
       <div class="sprk-o-Flag__body">
@@ -29,20 +27,19 @@ export const defaultStory = () => (
         </p>
       </div>
     </div>
-  `
-);
+  `;
 
 defaultStory.story = {
   name: 'Default',
 };
 
-export const reversed = () => (
+export const reversed = () =>
   `
     <div class="sprk-o-Flag sprk-o-Flag--rev">
       <div class="sprk-o-Flag__figure">
         <img
           alt="Provide useful alternative text"
-          src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+          src="../storybook-assets/spark-logo-mark.svg"
         />
       </div>
       <div class="sprk-o-Flag__body">
@@ -52,10 +49,9 @@ export const reversed = () => (
         </p>
       </div>
     </div>
-  `
-);
+  `;
 
-export const stacked = () => (
+export const stacked = () =>
   `
     <div class="sprk-o-Flag sprk-o-Flag--stacked">
       <div class="sprk-o-Flag__body">
@@ -67,9 +63,8 @@ export const stacked = () => (
       <div class="sprk-o-Flag__figure">
         <img
           alt="Provide useful alternative text"
-          src="https://spark-assets.netlify.app/spark-logo-mark.svg"
+          src="../storybook-assets/spark-logo-mark.svg"
         />
       </div>
     </div>
-  `
-);
+  `;

@@ -7,7 +7,7 @@ import SprkCardTeaser from './components/SprkCardTeaser/SprkCardTeaser';
 export default {
   title: 'Components/Card',
   decorators: [
-    story => <div className="sprk-o-Box sprk-o-Box--large">{story()}</div>
+    (story) => <div className="sprk-o-Box sprk-o-Box--large">{story()}</div>,
   ],
   component: SprkCard,
   parameters: {
@@ -18,7 +18,10 @@ export default {
 };
 
 export const defaultStory = () => (
-  <SprkCard idString="card-1" additionalContentClasses="sprk-o-Stack sprk-o-Stack--large">
+  <SprkCard
+    idString="card-1"
+    additionalContentClasses="sprk-o-Stack sprk-o-Stack--large"
+  >
     Base Card Content
   </SprkCard>
 );
@@ -57,7 +60,8 @@ export const teaser = () => (
     idString="card1"
     variant="teaser"
     teaserConfig={{
-      bodyText: 'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
+      bodyText:
+        'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
       cta: {
         ctaAnalytics: 'test',
         text: 'Learn More',
@@ -68,7 +72,7 @@ export const teaser = () => (
         href: '#nogo',
         mediaLinkElement: 'a',
         imgAlt: 'placeholder image',
-        imgSrc: 'https://spark-assets.netlify.app/desktop.jpg',
+        imgSrc: '../../../storybook-assets/desktop.jpg',
         mediaAnalyticsString: 'Card:teaser-link',
         mediaVariant: 'img',
       },
@@ -83,7 +87,8 @@ export const teaserWithDifferentElementOrder = () => (
     idString="card1"
     variant="teaser"
     teaserConfig={{
-      bodyText: 'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
+      bodyText:
+        'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
       cta: {
         ctaAnalytics: 'test',
         text: 'Learn More',
@@ -94,7 +99,7 @@ export const teaserWithDifferentElementOrder = () => (
         href: '#nogo',
         mediaLinkElement: 'a',
         imgAlt: 'placeholder image',
-        imgSrc: 'https://spark-assets.netlify.app/desktop.jpg',
+        imgSrc: '../../../storybook-assets/desktop.jpg',
         mediaAnalyticsString: 'Card:teaser-link',
         mediaVariant: 'img',
       },
@@ -111,19 +116,20 @@ export const twoUpCards = () => (
       variant="teaser"
       additionalClasses="sprk-o-Stack__item sprk-o-Stack__item--flex@l"
       teaserConfig={{
-        bodyText: 'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
+        bodyText:
+          'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
         cta: {
           ctaAnalytics: 'test',
           text: 'Learn More',
           ctaVariant: 'button',
           href: '#nogo',
-          buttonVariant: 'secondary'
+          buttonVariant: 'secondary',
         },
         media: {
           href: '#nogo',
           mediaLinkElement: 'a',
           imgAlt: 'placeholder image',
-          imgSrc: 'https://spark-assets.netlify.app/desktop.jpg',
+          imgSrc: '../../../storybook-assets/desktop.jpg',
           mediaAnalyticsString: 'Card:teaser-link',
           mediaVariant: 'img',
         },
@@ -136,7 +142,8 @@ export const twoUpCards = () => (
       variant="teaser"
       additionalClasses="sprk-o-Stack__item sprk-o-Stack__item--flex@l"
       teaserConfig={{
-        bodyText: 'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
+        bodyText:
+          'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
         cta: {
           ctaAnalytics: 'test',
           text: 'Learn More',
@@ -148,7 +155,7 @@ export const twoUpCards = () => (
           href: '#nogo',
           mediaLinkElement: 'a',
           imgAlt: 'placeholder image',
-          imgSrc: 'https://spark-assets.netlify.app/desktop.jpg',
+          imgSrc: '../../../storybook-assets/desktop.jpg',
           mediaAnalyticsString: 'Card:teaser-link',
           mediaVariant: 'img',
         },
@@ -170,7 +177,8 @@ export const threeUpCards = () => (
       variant="teaser"
       additionalClasses="sprk-o-Stack__item sprk-o-Stack__item--flex@l"
       teaserConfig={{
-        bodyText: 'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
+        bodyText:
+          'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
         cta: {
           ctaAnalytics: 'test',
           text: 'Learn More',
@@ -182,7 +190,7 @@ export const threeUpCards = () => (
           href: '#nogo',
           mediaLinkElement: 'a',
           imgAlt: 'placeholder image',
-          imgSrc: 'https://spark-assets.netlify.app/desktop.jpg',
+          imgSrc: '../../../storybook-assets/desktop.jpg',
           mediaAnalyticsString: 'Card:teaser-link',
           mediaVariant: 'img',
         },
@@ -195,7 +203,8 @@ export const threeUpCards = () => (
       variant="teaser"
       additionalClasses="sprk-o-Stack__item sprk-o-Stack__item--flex@l"
       teaserConfig={{
-        bodyText: 'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
+        bodyText:
+          'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
         cta: {
           ctaAnalytics: 'test',
           text: 'Learn More',
@@ -207,7 +216,7 @@ export const threeUpCards = () => (
           href: '#nogo',
           mediaLinkElement: 'a',
           imgAlt: 'placeholder image',
-          imgSrc: 'https://spark-assets.netlify.app/desktop.jpg',
+          imgSrc: '../../../storybook-assets/desktop.jpg',
           mediaAnalyticsString: 'Card:teaser-link',
           mediaVariant: 'img',
         },
@@ -220,7 +229,8 @@ export const threeUpCards = () => (
       variant="teaser"
       additionalClasses="sprk-o-Stack__item sprk-o-Stack__item--flex@l"
       teaserConfig={{
-        bodyText: 'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
+        bodyText:
+          'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
         cta: {
           ctaAnalytics: 'test',
           text: 'Learn More',
@@ -232,7 +242,7 @@ export const threeUpCards = () => (
           href: '#nogo',
           mediaLinkElement: 'a',
           imgAlt: 'placeholder image',
-          imgSrc: 'https://spark-assets.netlify.app/desktop.jpg',
+          imgSrc: '../../../storybook-assets/desktop.jpg',
           mediaAnalyticsString: 'Card:teaser-link',
           mediaVariant: 'img',
         },
@@ -254,7 +264,8 @@ export const fourUpCards = () => (
       variant="teaser"
       additionalClasses="sprk-o-Stack__item sprk-o-Stack__item--flex@l"
       teaserConfig={{
-        bodyText: 'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
+        bodyText:
+          'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
         cta: {
           ctaAnalytics: 'test',
           text: 'Learn More',
@@ -266,7 +277,7 @@ export const fourUpCards = () => (
           href: '#nogo',
           mediaLinkElement: 'a',
           imgAlt: 'placeholder image',
-          imgSrc: 'https://spark-assets.netlify.app/desktop.jpg',
+          imgSrc: '../../../storybook-assets/desktop.jpg',
           mediaAnalyticsString: 'Card:teaser-link',
           mediaVariant: 'img',
         },
@@ -279,7 +290,8 @@ export const fourUpCards = () => (
       variant="teaser"
       additionalClasses="sprk-o-Stack__item sprk-o-Stack__item--flex@l"
       teaserConfig={{
-        bodyText: 'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
+        bodyText:
+          'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
         cta: {
           ctaAnalytics: 'test',
           text: 'Learn More',
@@ -291,7 +303,7 @@ export const fourUpCards = () => (
           href: '#nogo',
           mediaLinkElement: 'a',
           imgAlt: 'placeholder image',
-          imgSrc: 'https://spark-assets.netlify.app/desktop.jpg',
+          imgSrc: '../../../storybook-assets/desktop.jpg',
           mediaAnalyticsString: 'Card:teaser-link',
           mediaVariant: 'img',
         },
@@ -304,7 +316,8 @@ export const fourUpCards = () => (
       variant="teaser"
       additionalClasses="sprk-o-Stack__item sprk-o-Stack__item--flex@l"
       teaserConfig={{
-        bodyText: 'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
+        bodyText:
+          'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
         cta: {
           ctaAnalytics: 'test',
           text: 'Learn More',
@@ -316,7 +329,7 @@ export const fourUpCards = () => (
           href: '#nogo',
           mediaLinkElement: 'a',
           imgAlt: 'placeholder image',
-          imgSrc: 'https://spark-assets.netlify.app/desktop.jpg',
+          imgSrc: '../../../storybook-assets/desktop.jpg',
           mediaAnalyticsString: 'Card:teaser-link',
           mediaVariant: 'img',
         },
@@ -329,7 +342,8 @@ export const fourUpCards = () => (
       variant="teaser"
       additionalClasses="sprk-o-Stack__item sprk-o-Stack__item--flex@l"
       teaserConfig={{
-        bodyText: 'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
+        bodyText:
+          'Lorem ipsum dolor sit amet, doctus invenirevix te. Facilisi perpetua.',
         cta: {
           ctaAnalytics: 'test',
           text: 'Learn More',
@@ -341,7 +355,7 @@ export const fourUpCards = () => (
           href: '#nogo',
           mediaLinkElement: 'a',
           imgAlt: 'placeholder image',
-          imgSrc: 'https://spark-assets.netlify.app/desktop.jpg',
+          imgSrc: '../../../storybook-assets/desktop.jpg',
           mediaAnalyticsString: 'Card:teaser-link',
           mediaVariant: 'img',
         },
