@@ -36,6 +36,29 @@ jobs:
         run: |
           npm run build
 
+      - name: Build Storybooks
+        run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
+          PREFIX="/spark-design-system"
+          for SUBPROJECT in react angular html; do
+            echo "Building $SUBPROJECT Storybook..."
+            cd $SUBPROJECT
+            if npm install 2>/dev/null && npm run build-storybook 2>/dev/null; then
+              mkdir -p ../public/$SUBPROJECT
+              cp -r storybook-static/* ../public/$SUBPROJECT/
+              echo "  ✓ $SUBPROJECT Storybook built"
+              # Inject <base href> for GitHub Pages subdirectory deployment
+              for htmlfile in ../public/$SUBPROJECT/*.html; do
+                if [ -f "$htmlfile" ]; then
+                  sed -i "s|<head>|<head><base href=\"${PREFIX}/${SUBPROJECT}/\">|" "$htmlfile"
+                fi
+              done
+            else
+              echo "  ⚠ $SUBPROJECT Storybook build failed, skipping"
+            fi
+            cd ..
+          done
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
