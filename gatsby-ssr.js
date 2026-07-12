@@ -6,23 +6,11 @@
 
 const React = require('react');
 
-exports.onRenderBody = (
-  { setHeadComponents, setPostBodyComponents },
-) => {
-
-  setHeadComponents([
-    <link
-      key="plugin-docsearch-css"
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
-    />
-  ]);
-
+exports.onRenderBody = ({ setPostBodyComponents }) => {
   setPostBodyComponents([
     <script
-      key="plugin-docsearch-js"
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"
+      key="algolia-experiences"
+      src="https://cdn.jsdelivr.net/npm/@algolia/experiences/dist/experiences.js?appId=UDWYP6UETT&apiKey=53634368ea2d49f07fd3428e7603a47c&experienceId=UDWYP6UETT&env=prod"
     />,
   ]);
 };

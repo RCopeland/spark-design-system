@@ -1,11 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import {
-  SprkMasthead,
-  SprkTextInput,
-  SprkLink,
-} from '@sparkdesignsystem/spark-react';
+import { SprkMasthead, SprkLink } from '@sparkdesignsystem/spark-react';
 import SiteLogo from './site-logo';
 import { useInstallingSparkData } from '../hooks/use-installing-spark';
 import { useUsingSparkData } from '../hooks/use-using-spark';
@@ -46,13 +42,7 @@ const Header = ({ setContext }) => {
     >
       Principles
     </SprkLink>,
-    <SprkTextInput
-      additionalClasses="docs-header-search--wide sprk-u-mbn"
-      leadingIcon="search"
-      hiddenLabel
-      name="InlineSearch"
-      placeholder="Search"
-    />,
+    <div id="autocomplete" key="algolia-search" />,
   ];
 
   const installingSparkPages = useInstallingSparkData().map((page) => ({
@@ -133,15 +123,7 @@ const Header = ({ setContext }) => {
       logoLinkElement={Link}
       additionalClasses="docs-masthead"
       utilityContents={utilityItems}
-      navLink={
-        <SprkTextInput
-          additionalClasses="docs-header-search sprk-u-Width-100"
-          leadingIcon="search"
-          hiddenLabel
-          name="InlineSearch"
-          placeholder="Search"
-        />
-      }
+      navLink={<div id="autocomplete-mobile" key="algolia-search-mobile" />}
       narrowNavLinks={narrowNavLinks}
     />
   );
