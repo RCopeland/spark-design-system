@@ -1,5 +1,12 @@
 const path = require('path');
 module.exports = ({ config }) => {
+  // Fix for webpack 4 + Node 18+ compatibility with .mjs files
+  config.module.rules.push({
+    test: /\.mjs$/,
+    include: /node_modules/,
+    type: 'javascript/auto',
+  });
+
   // use installed babel-loader which is v8.0-beta (which is meant to work with @babel/core@7)
   config.module.rules[0].use[0].loader = require.resolve('babel-loader');
   config.module.rules[0].include.push(path.resolve('../storybook-utilities'));
@@ -9,7 +16,7 @@ module.exports = ({ config }) => {
     require.resolve('@babel/preset-env'),
   ];
   config.node = {
-    fs: 'empty'
+    fs: 'empty',
   };
 
   config.module.rules.push({
@@ -17,18 +24,25 @@ module.exports = ({ config }) => {
     use: [
       'style-loader',
       'css-loader',
-      { loader: 'postcss-loader', options: { plugins: [require('postcss-preset-env')({
-        stage: 0,
-        browsers: 'last 2 versions'
-      }),]}},
-      'sass-loader'
+      {
+        loader: 'postcss-loader',
+        options: {
+          plugins: [
+            require('postcss-preset-env')({
+              stage: 0,
+              browsers: 'last 2 versions',
+            }),
+          ],
+        },
+      },
+      'sass-loader',
     ],
   });
 
   config.resolve.modules = [
     ...(config.resolve.modules || []),
     path.resolve(__dirname, '../.babelrc'),
-    path.resolve(__dirname, '../node_modules')
+    path.resolve(__dirname, '../node_modules'),
   ];
 
   return config;
