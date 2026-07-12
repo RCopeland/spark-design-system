@@ -50,6 +50,8 @@ jobs:
             # For React, skip test:generate-output (enzyme fails on Node 18+)
             if [ "$SUBPROJECT" = "react" ]; then
               echo "  Skipping tests (enzyme incompatible with Node 18+)"
+              # Create empty test results file so storybook config can import it
+              echo '{"testResults":[]}' > src/.jest-test-results.json
               # Run build-storybook binary directly, bypassing npm script that runs tests
               if ./node_modules/.bin/build-storybook -s ../storybook-utilities/favicon; then
                 STORYBOOK_SUCCESS=true
