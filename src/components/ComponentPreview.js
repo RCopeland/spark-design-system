@@ -15,7 +15,7 @@ const ComponentPreview = ({
   allowScrolling,
 }) => {
   const iframeURL =
-    `/spark-design-system/html/iframe` +
+    `/spark-design-system/html/iframe.html` +
     `?id=${componentType}-${componentName}`;
 
   return (
